@@ -99,6 +99,12 @@ checkboxInput.addEventListener("change", () => {
         });
     } 
 
+    else {
+        inputRange.addEventListener("input", () => {
+            normalPrice();
+        });
+    }
+
 });
 
 
