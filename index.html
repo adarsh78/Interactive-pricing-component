@@ -8,76 +8,80 @@
   <title>Frontend Mentor | Interactive pricing component</title>
 </head>
 <body>
-
-  <div class="top-container">
-    <div class="img-container">
-      <img src="images/pattern-circles.svg" alt="pattern-circles">
-    </div>
-    <div class="text-container">
-      <h1>Simple, traffic-based pricing</h1>
-      <p>Sign-up for our 30-day trial. No credit card required.</p>
-    </div>
-  </div>
-
-  <div class="main-container">
-    <div class="first-block">
-      <div class="text-price-container">
-      <p class="main-text"><span>100k</span> Pageviews</p>
-      <div class="price-flex price-amt">
-        <span >$16.00</span> 
-        <p>/ month</p>
-    </div>
-  </div>
-
-      <div class="input-box">
-        <input type="range" min="0" max="100" value="50" step="25" class="input-range">
+  <main>
+    
+    <div class="top-container">
+      <div class="img-container">
+        <img src="images/pattern-circles.svg" alt="pattern-circles">
       </div>
+      <div class="text-container">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+    </div>
+    
+    <div class="main-container">
+      <div class="first-block">
+        <div class="text-price-container">
+          <p class="main-text"><span>100k</span> Pageviews</p>
+          <div class="price-flex price-amt">
+            <span >$16.00</span> 
+            <p>/ month</p>
+          </div>
+        </div>
+        
+        <form class="input-box">
+          <input type="range" min="0" max="100" value="50" step="25" class="input-range" aria-label="price-range">
+        </form>
 
-      <div class="price price-amt">
+        <div class="price price-amt">
           <span>$16.00</span> 
           <p>/ month</p>
-      </div>
-
-      <div class="billing">
-        <div class="monthly check-box">
-          <p>Monthly Billing</p>
-          <input type="checkbox">
         </div>
-
+        
+        <div class="billing">
+          <div class="monthly check-box">
+          <p>Monthly Billing</p>
+          <form>
+            <input type="checkbox" aria-label="checkbox">
+          </form>
+        </div>
+        
         <div class="yearly">
           <p>Yearly Billing</p>
           <span><a>-</a>25%</span>
         </div>
       </div>
     </div>
-
+    
     <div class="line"></div>
-
+    
     <div class="second-block">
       <div>
-      <div class="inner-second-block">
+        <div class="inner-second-block">
           <img src="images/icon-check.svg" alt="icon-check" width="15">
           <p>Unlimited websites</p>
+        </div>
+        
+        <div class="inner-second-block">
+          <img src="images/icon-check.svg" alt="icon-check" width="15">
+          <p>100% data ownership</p>
+        </div>
+        
+        <div class="inner-second-block">
+          <img src="images/icon-check.svg" alt="icon-check" width="15">
+          <p>Email reports</p>
+        </div>
       </div>
-
-      <div class="inner-second-block">
-        <img src="images/icon-check.svg" alt="icon-check" width="15">
-        <p>100% data ownership</p>
-      </div>
-
-      <div class="inner-second-block">
-        <img src="images/icon-check.svg" alt="icon-check" width="15">
-        <p>Email reports</p>
-      </div>
-      </div>
-
+      
       <div class="button">
         <button class="btn">Start my trial</button>
       </div>
-
+      
     </div>
   </div>
-
+  
+    </main>
   <script src="index.js" defer></script>
 </body>
 </html>
